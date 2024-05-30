@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 193, 193);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    background-color: rgb(47, 47, 47);
+    width: 400px;
+    height: 560px;
+    margin-top: 7%;
+    padding: 50px 30px 30px 30px;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    margin: auto;
+    width: 350px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+    font-size: 40px;
+}
+
+.buttons {
+    margin: auto;
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 20px;
+}
+
+.button {
+    cursor: pointer;
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(109, 108, 108);
+    justify-content: center;
+}
+
+#equal {
+    width: 167px;
+}
+
+#divide,
+#multiplicate,
+#minus,
+#plus,
+#equal {
+    background-color: rgb(220, 38, 74);
+}
+
+#erase_all,
+#change_sign,
+#mod {
+    color: black;
+    background-color: rgb(171, 170, 170);
+}
+
+/* FOOTER */
+.fa-github:before {
+    content: "\f09b";
+    color: black;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.fa-github {
+    color: var(--font);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+        height: auto;
+        padding: 30px 15px 15px 15px;
+        margin-top: 5%;
+        border-radius: 25px;
+    }
+
+    .display {
+        width: 92%;
+        height: 70px;
+        font-size: 40px;
+        padding: 5px;
+    }
+
+    .buttons {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .button {
+        width: 65px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    #equal {
+        width: 150px;
+    }
+}
